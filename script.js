@@ -1,5 +1,4 @@
 const date = document.querySelector('#date');
-const search = document.querySelector("#search");
 const explanation = document.querySelector("#explanation");
 const title = document.querySelector('#title');
 const image = document.querySelector('#image');
@@ -31,13 +30,11 @@ function displayData(data) {
 
 }
 
-function setDate() {
-  date.addEventListener('change', (e)=>{
+function setDate(e) {
     e.preventDefault();
     displayData();
-  })
 }
 
 
-search.addEventListener('click', setDate);
+date.addEventListener('click', setDate);
 
