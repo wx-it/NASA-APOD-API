@@ -36,5 +36,5 @@ function setDate(e) {
 }
 
 
-date.addEventListener('click', setDate);
+date.addEventListener('change', setDate);
 
