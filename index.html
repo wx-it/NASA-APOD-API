@@ -8,19 +8,28 @@
     <title>APOD API</title>
   </head>
   <body>
-    <label for="date">Pick a Date:</label>
-    <input
-      type="date"
-      placeholder="dd-mm-yyyy"
-      name="date"
-      id="date"
-      min="1995-06-16"
-    />
+    <h1>Nasa's picture of the day</h1>
+    <div class="container">
+      <div class="search">
+        <label for="date">Pick a Date:</label>
+        <input
+          type="date"
+          placeholder="dd-mm-yyyy"
+          name="date"
+          id="date"
+          min="1995-06-16"
+        />
+        <button id="search">Search</button>
+      </div>
 
-    <h5 id="show-date"></h5>
-    <h1 id="title"></h1>
-    <img id="image" src="" alt="" />
-    <p id="explanation"></p>
+      <div class="content">
+        <h2 id="title"></h2>
+        <h5 id="show-date"></h5>
+        <img id="image" src="" alt="" />
+        <p id="explanation"></p>
+      </div>
+      <p>&copy; <span id="copyright"></span></p>
+    </div>
     <script src="script.js"></script>
   </body>
 </html>

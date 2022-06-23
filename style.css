@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+*{
+    font-family: "Montserrat", sans-serif;
+    box-sizing: border-box;
+}
+
+h1{
+    text-align: center;
+    margin: 2rem 0;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.search{
+    margin-top: 2rem;
+}
+
+.search label{
+    font-weight: 700;
+    font-size: 15px;
+}
+
+.search input{
+    outline: none;
+     border: none; 
+    border-radius: 5px;
+    padding:.5rem;
+    margin: 0 1rem;
+    font-weight: 600;
+    text-align: center;
+    box-shadow: 1px 3px 10px 2px rgba(0, 0, 0, 0.2);
+}
+
+.search button{
+    padding: .5rem 1rem;
+    border: none;
+    border-radius: 5px;
+    background-color: rgb(3, 6, 199); 
+    color: white;
+    cursor: pointer;
+    font-weight: 700;
+}
+
+.search button:hover{
+    background: white;
+    color: rgb(3, 6, 199);
+    border: 1px solid rgb(3, 6, 199);
+    transition: all 0.7s ease-in-out;
+}
+
+
+.content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    text-align: center;
+    margin: 3rem 0;
+}
+
+
+.content h2{
+    margin: 2rem 0;
+    font-size: 28px;
+}
+
+.content h5{
+    background-color: rgb(185, 192, 192);
+    padding: 1rem;
+    margin: 0 auto;
+    margin-bottom: 4rem;
+    border-radius: 10px;
+    box-shadow: 1px 5px 10px 2px rgba(0, 0, 0, 0.4);
+}
+
+.content img{
+    box-shadow: 1px 5px 10px 2px rgba(0, 0, 0, 0.4);
+    margin: 0 1rem;
+    border-radius: 10px;
+}
+
+.content p{
+    margin: 3rem 0;
+    box-shadow: 1px 5px 10px 5px rgba(0, 0, 0, 0.2);
+    padding: 1.5rem .5rem;
+    border-radius: 10px;
+}
+
+.container span{
+    font-size: 12px;
+}
+
+@media (min-width: 700px) {
+    
+    .content img{
+        width: 70%;
+        margin: 0 auto;
+    }
+}
